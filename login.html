@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +10,25 @@
     <div class="form-container">
         <h2>PRIJAVA</h2>
         <form>
-            <label for="username">Korisničko ime</label>
+            <div>
+                <input type="text" name="username" id="username-input" placeholder="Korisničko ime">
+                <input type="password" name="password" id="password-input" placeholder="Lozinka">
+                 <br>
+                 <button type="submit">Prijava</button>
+            </div>
+            
+            <!--
+             <label for="username">Korisničko ime</label>
             <input type="text" id="username" name="username" required>
 
             <label for="password">Lozinka</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Prijava</button>
+            <button type="submit">Prijava</button>           
+            -->
+
         </form>
-        <p>Nemate račun? <a href="register.html">Kreirajte ga ovdje.</a></p>
-        <p>Ne želite se prijaviti? <a href="home.html">Odite nazad na početnu.</a></p>
+        <p>Nemate račun? <a href="register.html">Registrirajte se ovdje</a></p>
     </div>
-    
 </body>
 </html>

@@ -1,6 +1,6 @@
 .form-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ddd;
@@ -29,7 +29,7 @@
     padding: 10px;
     margin-bottom: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 2px solid #199400;
     border-radius: 4px;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .form-container button:hover {
-    background-color: #249436;
+    background-color: #2ea043;
 }
 
 .form-container p {
