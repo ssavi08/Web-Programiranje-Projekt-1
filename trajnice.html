@@ -16,6 +16,7 @@
             <p>PROIZVODNJA I PRODAJA CVIJEĆA</p>
         </div>
         <nav class="nav-links">
+            <a href="#" id="cart-icon">🛒</a>
             <a href="home.html">POČETNA</a>
             <a href="login.html">LOGIN</a>
             <a href="register.html">REGISTER</a>
@@ -31,40 +32,66 @@
         </div>
         
         <main class="categories">
-            <a href="#" class="category">
-                <img src="images/trajnica_main.jpg" alt="lavanda">
+            <div class="category" data-name="Lavanda" data-price="4">
+                <img src="images/trajnica_main.jpg" alt="Lavanda">
                 <p>Lavanda</p>
-            </a>
-            <a href="#" class="category">
-                <img src="images/trajnice/tamjan.jpg" alt="tamjan">
+                <p class="price">4 €</p>
+                <button class="add-to-cart">dodaj u košaricu</button>
+            </div>
+            <div class="category" data-name="Tamjan" data-price="5">
+                <img src="images/trajnice/tamjan.jpg" alt="Tamjan">
                 <p>Tamjan</p>
-            </a>
-            <a href="#" class="category">
-                <img src="images/trajnice/ukrasna-kopriva.jpg" alt="ukrasna kopriva">
+                <p class="price">5 €</p>
+                <button class="add-to-cart">dodaj u košaricu</button>
+            </div>
+            <div class="category" data-name="Ukrasna kopriva" data-price="6">
+                <img src="images/trajnice/ukrasna-kopriva.jpg" alt="Ukrasna kopriva">
                 <p>Ukrasna kopriva</p>
-            </a>
-            <a href="#" class="category">
-                <img src="images/trajnice/hortenzija_crvena.jpg" alt="hortenzija_crvena">
+                <p class="price">6 €</p>
+                <button class="add-to-cart">dodaj u košaricu</button>
+            </div>
+            <div class="category" data-name="Hortenzija" data-price="15">
+                <img src="images/trajnice/hortenzija_crvena.jpg" alt="Hortenzija">
                 <p>Hortenzija</p>
-            </a>
-            <a href="#" class="category">
-                <img src="images/trajnice/fuksija.jpg" alt="fuksija">
+                <p class="price">15 €</p>
+                <button class="add-to-cart">dodaj u košaricu</button>
+            </div>
+            <div class="category" data-name="Fuksija" data-price="15">
+                <img src="images/trajnice/fuksija.jpg" alt="Fuksija">
                 <p>Fuksija</p>
-            </a>
-            <a href="#" class="category">
-                <img src="images/trajnice/begonija.jpg" alt="begonija">
+                <p class="price">15 €</p>
+                <button class="add-to-cart">dodaj u košaricu</button>
+            </div>
+            <div class="category" data-name="Begonija" data-price="7">
+                <img src="images/trajnice/begonija.jpg" alt="Begonija">
                 <p>Begonija</p>
-            </a>
+                <p class="price">7 €</p>
+                <button class="add-to-cart">dodaj u košaricu</button>
+            </div>
         </main>
     </div>
 
+    <!-- Košarica -->
+    <div id="cart-drawer">
+        <div class="cart-header">
+            <h2>Moja košarica</h2>
+            <button id="close-cart">X</button>
+        </div>
+        <div id="cart-items">
+        </div>
+        <div id="cart-total">
+            <strong>Ukupno: <span id="total-price">0</span></strong>
+        </div>
+    </div>
+    
     <!--Podnožje-->
     <footer class="footer">
         <div class="footer-content">
-            <p><strong>Adresa:</strong> željeznička 31a 35400 Nova Gradiška</p>
+            <p><strong>Adresa:</strong> ulica kucni broj 35400 Nova Gradiška</p>
             <p><strong>Kontakt:</strong> +385 091 232 2456 | info@opgsavi.hr</p>
             <p><strong>Radno vrijeme:</strong> Pon - Pet: 08:00 - 17:00 | Subota: 08:00 - 13:00</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

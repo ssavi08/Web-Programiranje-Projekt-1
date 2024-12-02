@@ -15,6 +15,7 @@
             <p>PROIZVODNJA I PRODAJA CVIJEĆA</p>
         </div>
         <nav class="nav-links">
+            <a href="#" id="cart-icon">🛒</a>
             <a href="home.html">POČETNA</a>
             <a href="login.html">LOGIN</a>
             <a href="register.html">REGISTER</a>
@@ -44,6 +45,20 @@
         </main>
     </div>
 
+    <!-- Košarica -->
+    <div id="cart-drawer">
+        <div class="cart-header">
+            <h2>Moja košarica</h2>
+            <button id="close-cart">X</button>
+        </div>
+        <div id="cart-items">
+        </div>
+        <div id="cart-total">
+            <strong>Ukupno: €<span id="total-price">0</span></strong>
+        </div>
+    </div>
+
+    
     <footer class="footer">
         <div class="footer-content">
             <p><strong>Adresa:</strong> ulica kucni broj 35400 Nova Gradiška</p>
@@ -52,5 +67,6 @@
         </div>
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>

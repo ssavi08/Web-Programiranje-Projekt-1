@@ -21,6 +21,8 @@
     text-decoration: none;
     color: black;
     font-size: 16px;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -29,7 +31,8 @@
     height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
-    border-radius: 8px; 
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
 .content {
@@ -43,6 +46,69 @@
 }
 
 .opisni-tekst{
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
+}
+
+/* hover efekt */
+.category:hover img {
+    transform: scale(1.05);
+}
+
+/* button na slici */
+.category .add-to-cart {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* pokazivanje dugmeta na slici */
+.category:hover .add-to-cart {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.category p, .category .price {
+    margin-top: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.filters .filter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filters label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.filters select, .filters input[type="radio"] {
+    font-size: 14px;
+    padding: 5px;
 }
